@@ -84,7 +84,7 @@ Unet3D_train_vanila_model.ipynb
 
 ### Model Training
 
-NN-UNET can be cloned from https://github.com/MIC-DKFZ/nnUNet . Installation and Usage is available on the linked repo. We have used 3d_fullres network as a baseline model. 
+**NN-UNET** can be cloned from https://github.com/MIC-DKFZ/nnUNet . Installation and Usage is available on the linked repo. We have used 3d_fullres network as a baseline model. 
 Below are the details of how NN-UNET is used for this task. 
 - Training Setup
 ```

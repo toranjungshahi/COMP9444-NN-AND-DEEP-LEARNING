@@ -104,17 +104,17 @@ Below are the details of how NN-UNET is used for this task.
 ```
 - Training Workflow Details
 ```
-** - Extract fingerprint** of first100 cases of KiTS23 dataset
-"foreground_intensity_properties_per_channel/Modality (CT in this dataset) ": 
-"0": { "max": 2152.0, "mean": 105.07093345744681, "median": 105.0, "min": -251.0, "percentile_00_5": -74.0, "percentile_99_5": 291.0, "std": 75.0807730601272 }
- "shapes_after_crop": [ 128,232,232]  "spacings": [2.0,2.0,2.0] 
-** - Plan experiment**
-Only 3d fullres network architecture used from nnUNet, Below is the configuration for 3d fullres
-"3d_fullres": { "batch_size": 2,"patch_size": [96,160,160],"normalization_schemes":["CTNormalization"],"UNet_class_name": "PlainConvUNet","UNet_base_num_features": 32
-PlainConvUNet as shown in 3d UNet architecture
-Use region-based segmentation
-** - Pre-processing**
-** - CTNormalization** : Clip values to 0.5 and 99.5 percentile, followed by subtraction of the mean and division by standard deviation. Normalized between [-2.385, 2.476] 
+- Extract fingerprint of first100 cases of KiTS23 dataset
+    "foreground_intensity_properties_per_channel/Modality (CT in this dataset) ": 
+    "0": { "max": 2152.0, "mean": 105.07093345744681, "median": 105.0, "min": -251.0, "percentile_00_5": -74.0, "percentile_99_5": 291.0, "std": 75.0807730601272 }
+     "shapes_after_crop": [ 128,232,232]  "spacings": [2.0,2.0,2.0] 
+- Plan experiment
+    Only 3d fullres network architecture used from nnUNet, Below is the configuration for 3d fullres
+    "3d_fullres": { "batch_size": 2,"patch_size": [96,160,160],"normalization_schemes":["CTNormalization"],"UNet_class_name": "PlainConvUNet","UNet_base_num_features": 32
+    PlainConvUNet as shown in 3d UNet architecture
+    Use region-based segmentation
+- Pre-processing**
+    CTNormalization : Clip values to 0.5 and 99.5 percentile, followed by subtraction of the mean and division by standard deviation. Normalized between [-2.385, 2.476] 
 ```
 - Mean Validation dice of 0.78 was achieved with NN-UNET
 

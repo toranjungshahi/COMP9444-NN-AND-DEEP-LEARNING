@@ -103,6 +103,7 @@ Below are the details of how NN-UNET is used for this task.
 - Oversample foreground percent = 0.33
 ```
 - Training Workflow Details
+```
 ** - Extract fingerprint** of first100 cases of KiTS23 dataset
 "foreground_intensity_properties_per_channel/Modality (CT in this dataset) ": 
 "0": { "max": 2152.0, "mean": 105.07093345744681, "median": 105.0, "min": -251.0, "percentile_00_5": -74.0, "percentile_99_5": 291.0, "std": 75.0807730601272 }

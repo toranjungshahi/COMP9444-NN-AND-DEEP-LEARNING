@@ -83,7 +83,7 @@ Unet3D_train_vanila_model.ipynb
 - Contain model generators
 
 ### Model Training
-**NN-UNET** 
+
 NN-UNET can be cloned from https://github.com/MIC-DKFZ/nnUNet . Installation and Usage is available on the linked repo. We have used 3d_fullres network as a baseline model. 
 Below are the details of how NN-UNET is used for this task. 
 - Training Setup
@@ -127,7 +127,6 @@ Unet3D_train_vanila_model.ipynb
 
 ```
 
-**Main Notebook**
 Notebook below contains the development processes and findings when taking the kits23 challenge as the assignment project.
 ```
 main_notebook.ipynb
